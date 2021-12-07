@@ -1,6 +1,9 @@
 {
+  "main": ".dist/main.js",
   "scripts": {
-    "dev": "nodemon"
+    "start": "node .dist/main",
+    "dev": "nodemon",
+    "build": "babel --out-dir .dist/ --extensions \".js\" src/"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
